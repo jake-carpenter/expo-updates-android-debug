@@ -31,15 +31,34 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jcarpenter1.expoupdatesandroiddebug"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.jcarpenter1.expoupdatesandroiddebug"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "63fee44b-9005-41aa-bb9f-3f4901da498f"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 5000,
+      "url": "https://u.expo.dev/63fee44b-9005-41aa-bb9f-3f4901da498f"
     }
   }
 }
